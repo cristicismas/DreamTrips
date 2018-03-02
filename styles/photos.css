@@ -1,0 +1,190 @@
+/* General Styles */
+
+html {
+    font: normal 16px "Quicksand";
+    color: #555;
+}
+
+body {
+	width: 100%;
+	margin: 0;
+}
+
+ul, nav {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+    opacity: 0.8;
+}
+
+a:hover {
+    opacity: 1;
+    color: #555;
+    text-decoration: none;
+}
+
+a.btn {
+    border-radius: 4px;
+    padding: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #03acb5;
+    text-align: center;
+    cursor: pointer;
+    opacity: 1;
+}
+
+hr {
+    width: 350px;
+    height: 3px;
+    border: 0;
+    background-color: #30E3CA;
+}
+
+/* Header */
+
+header {
+    font-family: "Quicksand", sans-serif;
+    color: #555;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 1;
+    font-size: 20px;
+	border-bottom: 2px solid #555;
+}
+
+header li {
+    font-size: 27px;
+    margin: 10px 20px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+header h1 {
+    margin: 10px 50px 20px;
+    color: #555;
+}
+
+h1 {
+	margin-top: 40px;
+	text-align: center;
+	font-size: 40px;
+}
+
+/* Main */
+
+main {
+	margin: auto;
+	width: 90%;
+}
+
+main h2 {
+	margin-left: 50px;
+	margin-bottom: 10px;
+	text-decoration: underline;
+	font-size: 30px;
+}
+
+main .gallery {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+main .gallery img {
+	align-self: flex-start;
+	padding: 20px;
+	width: 350px;
+	max-height: auto;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #037074;
+    color: #f5f5f5;
+	margin: 0;
+	width: 100%;
+}
+
+footer * {
+    margin: 20px 35px;
+	font-family: sans-serif;
+}
+
+footer a {
+    margin: 0;
+	color: #fff;
+}
+
+footer a:hover {
+	color: #fff;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 900px) {
+    header {
+        flex-direction: column;
+	}
+
+	main h2{
+		text-align: center;
+		margin-left: 0;
+	}
+	
+	main .gallery img {
+		padding: 20px 0;
+		margin: auto;
+		width: 300px;
+		align-self: center;
+	}
+	
+	footer {
+		flex-direction: column;
+		text-align: center;
+	}
+	
+	footer p {
+		margin: 10px;
+	}
+	
+	footer p:first-child {
+		margin-top: 20px;
+	}
+	
+	footer p:last-child {
+		margin-bottom: 20px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	header h1 {
+		margin-bottom: 5px;
+	}
+	
+	header nav {
+		flex-direction: column;
+	}
+	
+	header nav:last-child {
+		margin-bottom: 15px;
+	}
+	
+	header + h1 {
+		font-size: 27px;
+	}
+}

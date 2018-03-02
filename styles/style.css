@@ -1,0 +1,308 @@
+/* General Styles */
+
+html {
+    font: normal 16px "Quicksand";
+    color: #555;
+}
+
+ul, nav {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.8;
+}
+
+a:hover {
+    opacity: 1;
+    color: #fff;
+    text-decoration: none;
+}
+
+a.btn {
+    border-radius: 4px;
+    padding: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #03acb5;
+    text-align: center;
+    cursor: pointer;
+    opacity: 1;
+}
+
+hr {
+    width: 350px;
+    height: 3px;
+    border: 0;
+    background-color: #30E3CA;
+}
+
+/* Header */
+
+header {
+    font-family: "Quicksand", sans-serif;
+    position: absolute;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: 1s fadein 0.5s forwards;
+    opacity: 0;
+    font-size: 20px;
+}
+
+header li {
+    font-size: 27px;
+    margin: 15px 20px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+header h1 {
+    margin: 15px 70px;
+    color: #fff;
+}
+
+@keyframes fadein {
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Hero */
+
+.hero {
+    background-image: url("../img/hero-img.jpeg");
+	font-family: "Quicksand", sans-serif;
+    background-color: #ABC2D8;
+    height: 100vh;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero h1 {
+    color: #fff;
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    opacity: 0;
+    animation: 1s fadein 1s forwards;
+}
+
+.hero h3 {
+    color: #fff;
+    letter-spacing: 3px;
+    opacity: 0;
+    animation: 1s fadein 1s forwards;
+}
+
+/* About */
+
+.about {
+    text-align: center;
+    width: 60%;
+    letter-spacing: 1px;
+    margin: 80px auto;
+}
+
+.about h1 {
+    margin-bottom: 5px;
+}
+
+/* Destinations */
+
+.destinations {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.destinations p,
+.destinations h1 {
+    text-align: center;
+    width: 60%;
+    letter-spacing: 1px;
+    margin: auto;
+}
+
+.destinations h1 {
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.photos {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.photos img {
+    width: 350px;
+    padding: 20px;
+}
+
+/* Trip Types */
+
+.triptypes h1 {
+    margin: 40px 0 30px;
+    letter-spacing: 1px;
+}
+
+.triptypes p {
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.triptypes .shortDescription {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.triptypes .container {
+    display: flex;
+    justify-content: center;
+}
+
+.triptypes .container .row {
+    margin: 50px;
+    flex-basis: 23%;
+}
+
+.triptypes h3 {
+    font-size: 25px;
+}
+
+/* Learn More */
+
+.learn-more {
+    text-align: center;
+    width: 60%;
+    margin: 60px auto;
+    letter-spacing: 1px;
+}
+
+.learn-more h1 {
+    margin-bottom: 30px;
+}
+
+.learn-more p {
+    margin-bottom: 45px;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #037074;
+    color: #f5f5f5;
+}
+
+footer * {
+    margin: 20px 35px;
+}
+
+footer a {
+    margin: 0;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 945px) {
+    
+    header {
+        flex-direction: column;
+    }
+
+    .triptypes .container {
+        flex-direction: column;
+        width: 60%;
+        margin: auto;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    
+	hr {
+		width: 250px;
+	}
+	
+    header nav {
+        flex-direction: column;
+    }
+
+    header nav li {
+        margin: 0;
+    }
+
+	.hero {
+		background-image: none;
+		background-color: #89b0d6;
+		justify-content: flex-end;
+		letter-spacing: 0;
+	}
+	
+	.hero h1 {
+		display: none;
+	}
+	
+	.hero h3 {
+		width: 80%;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	
+	.about {
+		width: 80%;
+	}
+	
+	.destinations p,
+	.destinations h1 {
+		width: 80%;
+	}
+	
+	.triptypes .container .row {
+    	margin: 10px;
+	}
+	
+	.photos img {
+		padding: 20px 0;
+		width: 300px;
+		margin: 0;
+	}
+	
+    .triptypes .container {
+        width: 90%;
+    }
+	
+	.triptypes .shortDescription,
+	.learn-more{
+		width: 90%;
+	}
+
+	footer {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	footer * {
+		margin: 10px;
+	}
+}
