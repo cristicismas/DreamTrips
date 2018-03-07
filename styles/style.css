@@ -266,7 +266,7 @@ footer a {
 	.hero h3 {
 		width: 80%;
 		text-align: center;
-		margin-bottom: 40px;
+		margin-bottom: 100px;
 	}
 	
 	.about {
@@ -304,5 +304,20 @@ footer a {
 	
 	footer * {
 		margin: 10px;
+	}
+}
+
+@media (max-height: 500px) and (orientation: landscape) {
+	.hero h1 {
+		display: none;
+	}
+	
+	.hero h3 {
+		margin-top: 200px;
+	}
+	
+	header a {
+		opacity: 1;
+		text-shadow: 1px 1px #011f4f;
 	}
 }
