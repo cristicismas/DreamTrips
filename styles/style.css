@@ -39,6 +39,17 @@ hr {
     background-color: #30E3CA;
 }
 
+@keyframes fadein {
+    100% {
+        opacity: 1;
+    }
+}
+
+.in-view {
+	opacity: 0;
+	animation: fadein 1s forwards;
+}
+
 /* Header */
 
 header {
@@ -69,12 +80,6 @@ header nav {
 header h1 {
     margin: 15px 70px;
     color: #fff;
-}
-
-@keyframes fadein {
-    100% {
-        opacity: 1;
-    }
 }
 
 /* Hero */
