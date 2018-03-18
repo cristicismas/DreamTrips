@@ -45,8 +45,11 @@ hr {
     }
 }
 
-.in-view {
+.fadein-element {
 	opacity: 0;
+}
+
+.in-view {
 	animation: fadein 1s forwards;
 }
 
