@@ -316,16 +316,17 @@ footer a {
 }
 
 @media (max-height: 500px) and (orientation: landscape) {
+	.hero *,
+	header * {
+		text-shadow: 1px 1px 2px black;
+		opacity: 1;
+	}
+	
 	.hero h1 {
 		display: none;
 	}
 	
 	.hero h3 {
 		margin-top: 200px;
-	}
-	
-	header a {
-		opacity: 1;
-		text-shadow: 1px 1px #011f4f;
 	}
 }
