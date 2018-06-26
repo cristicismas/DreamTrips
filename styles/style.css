@@ -261,13 +261,15 @@ footer a {
         flex-direction: column;
     }
 
+    header * {
+        text-shadow: 3px 3px 5px #777;
+    }
+
     header nav li {
         margin: 0;
     }
 
 	.hero {
-		background-image: none;
-		background-color: #89b0d6;
 		justify-content: flex-end;
 		letter-spacing: 0;
 	}
