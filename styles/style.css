@@ -106,6 +106,8 @@ header h1 {
 .hero h1,
 .hero h3 {
     text-shadow: 3px 3px 5px #333;
+    background-color: rgba(14, 160, 165, 0.7);
+    padding: 15px;
 }
 
 .hero h1 {
@@ -121,6 +123,7 @@ header h1 {
     color: #fff;
     letter-spacing: 3px;
     opacity: 0;
+    margin-top: -20px;
     animation: 1s fadein 1s forwards;
 }
 
@@ -281,7 +284,8 @@ footer a {
 	.hero h3 {
 		width: 80%;
 		text-align: center;
-		margin-bottom: 100px;
+        margin-bottom: 100px;
+        background-color: rgba(14, 160, 165, 0.4);
 	}
 	
 	.about {
